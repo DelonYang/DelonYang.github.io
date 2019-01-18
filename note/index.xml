@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Notes on Blog</title>
+    <link>https://delonyang.github.io/note/</link>
+    <description>Recent content in Notes on Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Fri, 18 Jan 2019 16:47:54 +0800</lastBuildDate>
+    
+	<atom:link href="https://delonyang.github.io/note/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Awesome</title>
+      <link>https://delonyang.github.io/note/awesome/</link>
+      <pubDate>Fri, 18 Jan 2019 16:47:54 +0800</pubDate>
+      
+      <guid>https://delonyang.github.io/note/awesome/</guid>
+      <description> golang python  https://github.com/joke2k/faker Faker Data， 很好用   Utils </description>
+    </item>
+    
+    <item>
+      <title>好记性不如烂博客！</title>
+      <link>https://delonyang.github.io/note/note/</link>
+      <pubDate>Fri, 18 Jan 2019 16:38:54 +0800</pubDate>
+      
+      <guid>https://delonyang.github.io/note/note/</guid>
+      <description> Git 常用命令:
+ git remote -v 查看远程库 git reset &amp;quot;commitID&amp;quot; 版本回退 git checkout -- file 丢弃更改 设置换行符： git config --global core.safecrlf true 提交时自动转换为LF  </description>
+    </item>
+    
+  </channel>
+</rss>
