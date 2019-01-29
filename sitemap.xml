@@ -3,34 +3,38 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://delonyang.github.io/note/awesome/</loc>
+    <loc>http://delonyang.github.io/note/awesome/</loc>
     <lastmod>2019-01-18T16:47:54+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://delonyang.github.io/note/note/</loc>
+    <loc>http://delonyang.github.io/note/note/</loc>
     <lastmod>2019-01-18T16:38:54+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://delonyang.github.io/</loc>
+    <loc>http://delonyang.github.io/note/flask/</loc>
+  </url>
+  
+  <url>
+    <loc>http://delonyang.github.io/</loc>
     <lastmod>2019-01-18T16:47:54+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://delonyang.github.io/categories/</loc>
+    <loc>http://delonyang.github.io/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://delonyang.github.io/note/</loc>
+    <loc>http://delonyang.github.io/note/</loc>
     <lastmod>2019-01-18T16:47:54+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://delonyang.github.io/tags/</loc>
+    <loc>http://delonyang.github.io/tags/</loc>
     <priority>0</priority>
   </url>
   

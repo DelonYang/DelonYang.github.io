@@ -7,20 +7,20 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="author" content="Delon Yang" />
-  <meta property="og:url" content="https://delonyang.github.io/note/note/" />
-  <link rel="canonical" href="https://delonyang.github.io/note/note/" /><script type="application/ld+json">
+  <meta property="og:url" content="http://delonyang.github.io/note/note/" />
+  <link rel="canonical" href="http://delonyang.github.io/note/note/" /><script type="application/ld+json">
   {
       "@context" : "http://schema.org",
       "@type" : "BlogPosting",
       "mainEntityOfPage": {
            "@type": "WebPage",
-           "@id": "https://delonyang.github.io/"
+           "@id": "http://delonyang.github.io/"
       },
       "articleSection" : "note",
       "name" : "好记性不如烂博客！",
       "headline" : "好记性不如烂博客！",
-      "description" : " Git 常用命令:
- git remote -v 查看远程库 git reset &quot;commitID&quot; 版本回退 git checkout -- file 丢弃更改 设置换行符： git config --global core.safecrlf true 提交时自动转换为LF  ",
+      "description" : "Git 常用命令:
+ 远程库： git init --bare 在远程库中新建项目 git remote -v 查看远程库 git remote add url stash: git stash 将当前工作区、暂存区保存 git stash save &quot;msg&quot; 保存并起别名 git stash list git stash apply [--index] [&lt;stash&gt;] 恢复，但不会删除保存内容 git stash pop [--index] [&lt;stash&gt;] 恢复并删除 git stash clear 忽略已追踪的文件： git rm -r --cached log* git add . &amp;&amp; git commit -m &quot;&quot; 修改.gitignore git reset &quot;commitID&quot; 版本回退 git checkout -- file 丢弃更改 设置换行符： git config --global core.",
       "inLanguage" : "en-US",
       "author" : "Delon Yang",
       "creator" : "Delon Yang",
@@ -30,15 +30,15 @@
       "copyrightYear" : "2019",
       "datePublished": "2019-01-18 16:38:54 &#43;0800 CST",
       "dateModified" : "2019-01-18 16:38:54 &#43;0800 CST",
-      "url" : "https://delonyang.github.io/note/note/",
+      "url" : "http://delonyang.github.io/note/note/",
       "keywords" : [  ]
   }
 </script>
 <title>好记性不如烂博客！ - Blog</title>
   <meta property="og:title" content="好记性不如烂博客！ - Blog" />
   <meta property="og:type" content="article" />
-  <meta name="description" content=" Git 常用命令:
- git remote -v 查看远程库 git reset &quot;commitID&quot; 版本回退 git checkout -- file 丢弃更改 设置换行符： git config --global core.safecrlf true 提交时自动转换为LF  " />
+  <meta name="description" content="Git 常用命令:
+ 远程库： git init --bare 在远程库中新建项目 git remote -v 查看远程库 git remote add url stash: git stash 将当前工作区、暂存区保存 git stash save &quot;msg&quot; 保存并起别名 git stash list git stash apply [--index] [&lt;stash&gt;] 恢复，但不会删除保存内容 git stash pop [--index] [&lt;stash&gt;] 恢复并删除 git stash clear 忽略已追踪的文件： git rm -r --cached log* git add . &amp;&amp; git commit -m &quot;&quot; 修改.gitignore git reset &quot;commitID&quot; 版本回退 git checkout -- file 丢弃更改 设置换行符： git config --global core." />
 
   <link
     rel="stylesheet"
@@ -95,13 +95,63 @@
 
 <p>常用命令:</p>
 
-<pre><code>    git remote -v 查看远程库
+<pre><code>    远程库：
+    git init --bare 在远程库中新建项目
+    git remote -v 查看远程库
+    git remote add url
+
+    stash:
+    git stash 将当前工作区、暂存区保存
+    git stash save &quot;msg&quot; 保存并起别名
+    git stash list
+    git stash apply [--index] [&lt;stash&gt;] 恢复，但不会删除保存内容
+    git stash pop [--index] [&lt;stash&gt;] 恢复并删除
+    git stash clear
+
+    忽略已追踪的文件：
+    git rm -r --cached log*
+    git add . &amp;&amp; git commit -m &quot;&quot;
+    修改.gitignore
+
     git reset &quot;commitID&quot; 版本回退
     git checkout -- file 丢弃更改
     设置换行符：
     git config --global core.safecrlf true 提交时自动转换为LF
     
 </code></pre>
+
+<h3 id="数据库">数据库</h3>
+
+<ol>
+<li><p>表迁移：</p>
+
+<ol>
+<li>如果表已经存在
+INSERT INTO newtable (*column) SELECT *column FROM oldtable WHERE &hellip;;</li>
+<li>表不存在
+SELECT *column INTO newtable from oldtable WHERE &hellip;;</li>
+</ol></li>
+
+<li><p>查询时不区分大小写</p>
+
+<ol>
+<li>使用方法：<code>select * from atable where lower(name)=lower(&quot;regs&quot;)</code></li>
+<li>比较时不区分：<code>select * from atbale where name=&quot;regs&quot; COLLATE NOCASE</code></li>
+<li>建列时设置不区分：<code>create table atable (name varchar COLLATE NOCASE)</code></li>
+</ol></li>
+
+<li><p>改名</p>
+
+<ol>
+<li>改表名：<code>alter table old_name rename to new_name</code></li>
+</ol></li>
+
+<li><p>数据库脚本</p>
+
+<ol>
+<li>sqlite读取sql文件：sqlite3 data.db &lt; tt.sql</li>
+</ol></li>
+</ol>
 
           </div>
           
