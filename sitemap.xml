@@ -3,6 +3,26 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://delonyang.github.io/note/css/</loc>
+    <lastmod>2019-03-19T10:47:54+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://delonyang.github.io/note/js/</loc>
+    <lastmod>2019-03-07T15:38:54+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://delonyang.github.io/note/vue/</loc>
+    <lastmod>2019-02-20T16:47:54+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://delonyang.github.io/note/flask/</loc>
+    <lastmod>2019-01-29T16:47:54+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://delonyang.github.io/note/awesome/</loc>
     <lastmod>2019-01-18T16:47:54+08:00</lastmod>
   </url>
@@ -14,7 +34,7 @@
   
   <url>
     <loc>http://delonyang.github.io/</loc>
-    <lastmod>2019-01-18T16:47:54+08:00</lastmod>
+    <lastmod>2019-03-19T10:47:54+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -25,7 +45,7 @@
   
   <url>
     <loc>http://delonyang.github.io/note/</loc>
-    <lastmod>2019-01-18T16:47:54+08:00</lastmod>
+    <lastmod>2019-03-19T10:47:54+08:00</lastmod>
     <priority>0</priority>
   </url>
   

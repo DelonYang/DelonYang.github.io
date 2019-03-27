@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="Hugo 0.53" />
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="author" content="Delon Yang" />
+  <meta property="og:url" content="http://delonyang.github.io/note/vue/" />
+  <link rel="canonical" href="http://delonyang.github.io/note/vue/" /><script type="application/ld+json">
+  {
+      "@context" : "http://schema.org",
+      "@type" : "BlogPosting",
+      "mainEntityOfPage": {
+           "@type": "WebPage",
+           "@id": "http://delonyang.github.io/"
+      },
+      "articleSection" : "note",
+      "name" : "vue",
+      "headline" : "vue",
+      "description" : "vue vuex vuex就是app的数据源，一个store
+ state, 状态，相当于vue的data，存放各种数据； getter，相当于计算属性，主要对state的数据做二次加工，依赖state，当state改变时，getter自动发生更改； mutation， 直接改变state的途径，通过store.commit(xxx，payload), 不能有异步方法 action， store的异步任务，异步任务 -&gt; store.commit改变state  其实state是我们需要处理的数据源，getter是state的变种，依赖于state， 而mutation、action更改state的方法，mutation直接更改，action通过mutation间接更改；
+State 在vue中使用state： this.$store.state.xxx
+使用mapState()展开到vue文件的计算属性中
+Getter getter比state稍微复杂一点点，就是getter可以传参数。
+{ getters: { getTodoById: (state) =&gt; (id) =&gt; { return state.todos.find(todo =&gt; todo.id === id) }, todosCount: (state) =&gt; { return state.todos.length } } } //xx.vue { computed: { todosCount() { return this.$store.getters.todosCount }, getTodoById(id) { return this.$store.getters.getTodoById(id) } } }  使用mapGetter分发",
+      "inLanguage" : "en-US",
+      "author" : "Delon Yang",
+      "creator" : "Delon Yang",
+      "publisher": "Delon Yang",
+      "accountablePerson" : "Delon Yang",
+      "copyrightHolder" : "Delon Yang",
+      "copyrightYear" : "2019",
+      "datePublished": "2019-02-20 16:47:54 &#43;0800 CST",
+      "dateModified" : "2019-02-20 16:47:54 &#43;0800 CST",
+      "url" : "http://delonyang.github.io/note/vue/",
+      "keywords" : [  ]
+  }
+</script>
+<title>vue - Blog</title>
+  <meta property="og:title" content="vue - Blog" />
+  <meta property="og:type" content="article" />
+  <meta name="description" content="vue vuex vuex就是app的数据源，一个store
+ state, 状态，相当于vue的data，存放各种数据； getter，相当于计算属性，主要对state的数据做二次加工，依赖state，当state改变时，getter自动发生更改； mutation， 直接改变state的途径，通过store.commit(xxx，payload), 不能有异步方法 action， store的异步任务，异步任务 -&gt; store.commit改变state  其实state是我们需要处理的数据源，getter是state的变种，依赖于state， 而mutation、action更改state的方法，mutation直接更改，action通过mutation间接更改；
+State 在vue中使用state： this.$store.state.xxx
+使用mapState()展开到vue文件的计算属性中
+Getter getter比state稍微复杂一点点，就是getter可以传参数。
+{ getters: { getTodoById: (state) =&gt; (id) =&gt; { return state.todos.find(todo =&gt; todo.id === id) }, todosCount: (state) =&gt; { return state.todos.length } } } //xx.vue { computed: { todosCount() { return this.$store.getters.todosCount }, getTodoById(id) { return this.$store.getters.getTodoById(id) } } }  使用mapGetter分发" />
+
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/flexboxgrid@6.3.1/dist/flexboxgrid.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/2.10.0/github-markdown.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/tomorrow.min.css"
+  />
+  <link rel="stylesheet" href="/css/index.css">
+  <link href="/index.xml" rel="alternate" type="application/rss+xml" title="Blog">
+  
+  <script>
+    
+
+    (function(undefined) {}).call('object' === typeof window && window || 'object' === typeof self && self || 'object' === typeof global && global || {});
+  </script>
+
+  
+</head>
+
+
+  <body>
+    <article class="post " id="article">
+      <div class="row">
+        <div class="col-xs-12 col-md-10 col-md-offset-2 col-lg-8 col-lg-offset-2">
+          <a href="/">
+            <div class="head-line"></div>
+          </a>
+          <header class="post-header">
+            <h1 class="post-title">vue</h1>
+            <div class="row">
+              <div class="col-xs-6">
+                <time class="post-date" datetime="2019-02-20 16:47:54 CST">
+                  20 Feb 2019
+                </time>
+              </div>
+              <div class="col-xs-6">
+                <div class="post-author">
+                  <a target="_blank" href="https://github.com/delonyang/">@Delon Yang</a>
+                </div>
+              </div>
+            </div>
+          </header>
+    
+          <div class="post-content markdown-body">
+            
+
+<h1 id="vue">vue</h1>
+
+<h2 id="vuex">vuex</h2>
+
+<p>vuex就是app的数据源，一个store</p>
+
+<ul>
+<li>state, 状态，相当于vue的data，存放各种数据；</li>
+<li>getter，相当于计算属性，主要对state的数据做二次加工，依赖state，当state改变时，getter自动发生更改；</li>
+<li>mutation， 直接改变state的途径，通过<code>store.commit(xxx，payload)</code>, 不能有异步方法</li>
+<li>action， store的异步任务，异步任务 -&gt; store.commit改变state</li>
+</ul>
+
+<p>其实state是我们需要处理的数据源，getter是state的变种，依赖于state， 而mutation、action更改state的方法，mutation直接更改，action通过mutation间接更改；</p>
+
+<h3 id="state">State</h3>
+
+<p>在vue中使用state： <code>this.$store.state.xxx</code></p>
+
+<p>使用<code>mapState()</code>展开到vue文件的计算属性中</p>
+
+<h3 id="getter">Getter</h3>
+
+<p>getter比state稍微复杂一点点，就是getter可以传参数。</p>
+
+<pre><code class="language-js">{
+    getters: {
+        getTodoById: (state) =&gt; (id) =&gt; {
+            return state.todos.find(todo =&gt; todo.id === id)
+        },
+        todosCount: (state) =&gt; {
+            return state.todos.length
+        }
+    }
+}
+
+//xx.vue
+{
+    computed: {
+        todosCount() {
+            return this.$store.getters.todosCount
+        },
+        getTodoById(id) {
+            return this.$store.getters.getTodoById(id)
+        }
+    }
+}
+</code></pre>
+
+<p>使用mapGetter分发</p>
+
+          </div>
+          
+          
+        </div>
+      </div>
+    </article>
+
+    <script src="/js/highlight.pack.js"></script>
+<script src="https://unpkg.com/quicklink@0.1.1/dist/quicklink.umd.js"></script>
+
+<script>
+  hljs.initHighlightingOnLoad();
+  
+  var posts = document.getElementById('posts-list');
+  posts && quicklink({
+    el: posts,
+    priority: true,
+  });
+</script>
+
+    
+
+  </body>
+</html>

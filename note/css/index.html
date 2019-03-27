@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="Hugo 0.53" />
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="author" content="Delon Yang" />
+  <meta property="og:url" content="http://delonyang.github.io/note/css/" />
+  <link rel="canonical" href="http://delonyang.github.io/note/css/" /><script type="application/ld+json">
+  {
+      "@context" : "http://schema.org",
+      "@type" : "BlogPosting",
+      "mainEntityOfPage": {
+           "@type": "WebPage",
+           "@id": "http://delonyang.github.io/"
+      },
+      "articleSection" : "note",
+      "name" : "css",
+      "headline" : "css",
+      "description" : "CSS CSS实例  背景设置：图片背景、颜色、位置
+body{ background-image: url(); background-color: red; background-repeat: repeat-x; /* 水平重复 */ background-position: right top; /* 设置渐变背景 */ background-color: #8EC5FC; background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%); }  文本
+ 文本颜色 css body { color: red;/* 没有特别设置的该页面所有文本都会是红色 */ } p { color: #00f000; }  对齐、缩进 ```css h1 p{ text-alian: center; /* left, center, right, justfiy; */ text-indent: 2em; } 装饰 css p.main{ text-decoration: none; /* overline, line-through, underline; */ text-transform: uppercase;/* uppercase, lowercase, capitalize; */ line-height: 100%; /* 行高 */ letter-spacing: 2px; /* 字符间距 */ }  文本参考  字体",
+      "inLanguage" : "en-US",
+      "author" : "Delon Yang",
+      "creator" : "Delon Yang",
+      "publisher": "Delon Yang",
+      "accountablePerson" : "Delon Yang",
+      "copyrightHolder" : "Delon Yang",
+      "copyrightYear" : "2019",
+      "datePublished": "2019-03-19 10:47:54 &#43;0800 CST",
+      "dateModified" : "2019-03-19 10:47:54 &#43;0800 CST",
+      "url" : "http://delonyang.github.io/note/css/",
+      "keywords" : [  ]
+  }
+</script>
+<title>css - Blog</title>
+  <meta property="og:title" content="css - Blog" />
+  <meta property="og:type" content="article" />
+  <meta name="description" content="CSS CSS实例  背景设置：图片背景、颜色、位置
+body{ background-image: url(); background-color: red; background-repeat: repeat-x; /* 水平重复 */ background-position: right top; /* 设置渐变背景 */ background-color: #8EC5FC; background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%); }  文本
+ 文本颜色 css body { color: red;/* 没有特别设置的该页面所有文本都会是红色 */ } p { color: #00f000; }  对齐、缩进 ```css h1 p{ text-alian: center; /* left, center, right, justfiy; */ text-indent: 2em; } 装饰 css p.main{ text-decoration: none; /* overline, line-through, underline; */ text-transform: uppercase;/* uppercase, lowercase, capitalize; */ line-height: 100%; /* 行高 */ letter-spacing: 2px; /* 字符间距 */ }  文本参考  字体" />
+
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/flexboxgrid@6.3.1/dist/flexboxgrid.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/2.10.0/github-markdown.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/tomorrow.min.css"
+  />
+  <link rel="stylesheet" href="/css/index.css">
+  <link href="/index.xml" rel="alternate" type="application/rss+xml" title="Blog">
+  
+  <script>
+    
+
+    (function(undefined) {}).call('object' === typeof window && window || 'object' === typeof self && self || 'object' === typeof global && global || {});
+  </script>
+
+  
+</head>
+
+
+  <body>
+    <article class="post " id="article">
+      <div class="row">
+        <div class="col-xs-12 col-md-10 col-md-offset-2 col-lg-8 col-lg-offset-2">
+          <a href="/">
+            <div class="head-line"></div>
+          </a>
+          <header class="post-header">
+            <h1 class="post-title">css</h1>
+            <div class="row">
+              <div class="col-xs-6">
+                <time class="post-date" datetime="2019-03-19 10:47:54 CST">
+                  19 Mar 2019
+                </time>
+              </div>
+              <div class="col-xs-6">
+                <div class="post-author">
+                  <a target="_blank" href="https://github.com/delonyang/">@Delon Yang</a>
+                </div>
+              </div>
+            </div>
+          </header>
+    
+          <div class="post-content markdown-body">
+            
+
+<h1 id="css">CSS</h1>
+
+<h2 id="css实例">CSS实例</h2>
+
+<ol>
+<li><p>背景设置：图片背景、颜色、位置</p>
+
+<pre><code class="language-css">body{
+    background-image: url();
+    background-color: red;
+    background-repeat: repeat-x; /* 水平重复 */
+    background-position: right top;
+
+    /* 设置渐变背景 */
+    background-color: #8EC5FC;
+    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+}
+</code></pre></li>
+
+<li><p>文本</p>
+
+<ol>
+<li>文本颜色
+<code>css
+body {
+    color: red;/* 没有特别设置的该页面所有文本都会是红色 */
+}
+p {
+    color: #00f000;
+}
+</code></li>
+<li>对齐、缩进
+```css
+h1 p{
+    text-alian: center; /* left, center, right, justfiy; */
+    text-indent: 2em;
+}</li>
+<li>装饰
+<code>css
+p.main{
+    text-decoration: none; /* overline, line-through, underline; */
+    text-transform: uppercase;/* uppercase, lowercase, capitalize; */
+    line-height: 100%; /* 行高 */
+    letter-spacing: 2px; /* 字符间距 */
+}
+</code>
+<a href="http://www.runoob.com/css/css-text.html">文本参考</a></li>
+</ol></li>
+
+<li><p>字体</p>
+
+<pre><code class="language-css">font-family:&quot;font1&quot;,font2, font3; /* 逐个匹配 */
+font-size: 10px; /* 1.5em; 100%; */
+font-style: normal; /* italic 斜体 */
+font-weight: normal; /* lighter,bold, bolder, 100~900 */
+</code></pre></li>
+
+<li><p>链接</p>
+
+<p>一个链接有集中形式，伪类{link, visited, hover}</p>
+
+<pre><code class="language-css">a:link{
+    color: red;
+    font-family: &quot;&quot;;
+    text-decoration: none;
+    background-color: red;
+}
+</code></pre></li>
+
+<li><p>列表</p>
+
+<pre><code class="language-css">ul {
+    list-style: type position image;
+    /* type: 类型 
+    position: 前标的位置，默认 outside
+}
+</code></pre></li>
+
+<li><p>盒模型
+所有css元素都可以看作是个盒子，元素定义在盒子内部，从外到内以此为：margin, border, padding, content; width, height指定了content的宽度和高度。
+<img src="http://www.runoob.com/images/box-model.gif" alt="盒模型" /></p>
+
+<pre><code class="language-css">div {
+    width: 22px;
+    padding: 3px;
+    border: 2px solid gray;
+    border-radius: 8px;
+    margin: 0px;
+    /* outline 为外边框，在border外面 */
+    /*margin, padding 可以简写：
+    10px 20px; 上下10， 左右20；
+    10px 20px 30px; 上10， 左右20， 下30；
+    10px 20px 30px 40px；一次对应上下左右;
+    */
+}
+</code></pre></li>
+
+<li><p>选择器
+选择器是css的基础，常见的有元素，类，id，子女等</p>
+
+<ol>
+<li>元素选择器：<code>p{}, h1{}</code></li>
+<li>类选择器： <code>.abc{}, p.title{}</code></li>
+<li>id选择器： <code>#abc{}</code>, ID唯一</li>
+<li>子女选择器： <code>div.abc p{}</code></li>
+<li>组选择器： <code>p, h1, div{}</code></li>
+</ol>
+
+<p>除了这些基本的选择器，sass语法增强了选择器的能力；</p></li>
+
+<li><p>定位position
+position可以选值：static(默认), relative, fixed, absolute, sticky</p>
+
+<ol>
+<li>static
+html默认元素，不会受到top, bottom, left, right影响</li>
+<li>fixed
+定位于浏览器窗口，不会随页面滚动，会与其他元素重叠;top,left,right顺序有待考究</li>
+<li>relative
+相对于元素原位置移动</li>
+<li>absolute
+相对于父元素移动， 不占空间，会重叠</li>
+<li>stickly
+滚动定位，当页面滚动至指定位置时便不再动
+<br /></li>
+</ol>
+
+<p>overflow,超出显示部分如何显示：
+1. scroll 滚动
+2. hidden 隐藏
+3. visible 超出显示
+4. auto</p></li>
+
+<li><p>居中对齐</p>
+
+<ol>
+<li><p>元素居中对齐</p>
+
+<pre><code class="language-css">.center {
+    margin: auto;
+    width: 80%; /* 未设置width或者设置为100%，居中不会生效*/
+}
+</code></pre></li>
+
+<li><p>文本居中对齐</p>
+
+<pre><code class="language-css">p {
+    text-align: center;
+}
+</code></pre></li>
+
+<li><p>图片水平居中</p>
+
+<pre><code class="language-css">img {
+    display: block;
+    margin: auto;
+    width: 50%;
+}
+</code></pre></li>
+
+<li><p>悬挂</p>
+
+<pre><code class="language-css">.right {
+    position: absolute;
+    right: 0px;
+}
+</code></pre></li>
+
+<li><p>垂直居中</p>
+
+<pre><code class="language-css">.center {
+    padding: 100px; /*设置一定量的padding */
+}
+</code></pre></li>
+</ol></li>
+</ol>
+
+          </div>
+          
+          
+        </div>
+      </div>
+    </article>
+
+    <script src="/js/highlight.pack.js"></script>
+<script src="https://unpkg.com/quicklink@0.1.1/dist/quicklink.umd.js"></script>
+
+<script>
+  hljs.initHighlightingOnLoad();
+  
+  var posts = document.getElementById('posts-list');
+  posts && quicklink({
+    el: posts,
+    priority: true,
+  });
+</script>
+
+    
+
+  </body>
+</html>
