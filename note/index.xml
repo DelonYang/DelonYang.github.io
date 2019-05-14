@@ -19,7 +19,21 @@
       <guid>http://delonyang.github.io/note/css/</guid>
       <description>CSS CSS实例  背景设置：图片背景、颜色、位置
 body{ background-image: url(); background-color: red; background-repeat: repeat-x; /* 水平重复 */ background-position: right top; /* 设置渐变背景 */ background-color: #8EC5FC; background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%); }  文本
- 文本颜色 css body { color: red;/* 没有特别设置的该页面所有文本都会是红色 */ } p { color: #00f000; }  对齐、缩进 ```css h1 p{ text-alian: center; /* left, center, right, justfiy; */ text-indent: 2em; } 装饰 css p.main{ text-decoration: none; /* overline, line-through, underline; */ text-transform: uppercase;/* uppercase, lowercase, capitalize; */ line-height: 100%; /* 行高 */ letter-spacing: 2px; /* 字符间距 */ }  文本参考  字体</description>
+ 文本颜色
+body { color: red;/* 没有特别设置的该页面所有文本都会是红色 */ } p { color: #00f000; }  对齐、缩进
+```css h1 p{ text-alian: center; /* left, center, right, justfiy; */ text-indent: 2em; }
+ 装饰
+p.main{ text-decoration: none; /* overline, line-through, underline; */ text-transform: uppercase;/* uppercase, lowercase, capitalize; */ line-height: 100%; /* 行高 */ letter-spacing: 2px; /* 字符间距 */ }  文本参考</description>
+    </item>
+    
+    <item>
+      <title>Go</title>
+      <link>http://delonyang.github.io/note/go/</link>
+      <pubDate>Thu, 07 Mar 2019 15:38:54 +0800</pubDate>
+      
+      <guid>http://delonyang.github.io/note/go/</guid>
+      <description> Go goscript 1. Http  获取http请求的IP，Path
+ip, port, err := net.SplitHostPort(req.RemoteAddr) path := req.URL.Path   </description>
     </item>
     
     <item>

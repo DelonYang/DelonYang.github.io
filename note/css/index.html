@@ -21,7 +21,11 @@
       "headline" : "css",
       "description" : "CSS CSS实例  背景设置：图片背景、颜色、位置
 body{ background-image: url(); background-color: red; background-repeat: repeat-x; /* 水平重复 */ background-position: right top; /* 设置渐变背景 */ background-color: #8EC5FC; background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%); }  文本
- 文本颜色 css body { color: red;/* 没有特别设置的该页面所有文本都会是红色 */ } p { color: #00f000; }  对齐、缩进 ```css h1 p{ text-alian: center; /* left, center, right, justfiy; */ text-indent: 2em; } 装饰 css p.main{ text-decoration: none; /* overline, line-through, underline; */ text-transform: uppercase;/* uppercase, lowercase, capitalize; */ line-height: 100%; /* 行高 */ letter-spacing: 2px; /* 字符间距 */ }  文本参考  字体",
+ 文本颜色
+body { color: red;/* 没有特别设置的该页面所有文本都会是红色 */ } p { color: #00f000; }  对齐、缩进
+```css h1 p{ text-alian: center; /* left, center, right, justfiy; */ text-indent: 2em; }
+ 装饰
+p.main{ text-decoration: none; /* overline, line-through, underline; */ text-transform: uppercase;/* uppercase, lowercase, capitalize; */ line-height: 100%; /* 行高 */ letter-spacing: 2px; /* 字符间距 */ }  文本参考",
       "inLanguage" : "en-US",
       "author" : "Delon Yang",
       "creator" : "Delon Yang",
@@ -40,7 +44,11 @@ body{ background-image: url(); background-color: red; background-repeat: repeat-
   <meta property="og:type" content="article" />
   <meta name="description" content="CSS CSS实例  背景设置：图片背景、颜色、位置
 body{ background-image: url(); background-color: red; background-repeat: repeat-x; /* 水平重复 */ background-position: right top; /* 设置渐变背景 */ background-color: #8EC5FC; background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%); }  文本
- 文本颜色 css body { color: red;/* 没有特别设置的该页面所有文本都会是红色 */ } p { color: #00f000; }  对齐、缩进 ```css h1 p{ text-alian: center; /* left, center, right, justfiy; */ text-indent: 2em; } 装饰 css p.main{ text-decoration: none; /* overline, line-through, underline; */ text-transform: uppercase;/* uppercase, lowercase, capitalize; */ line-height: 100%; /* 行高 */ letter-spacing: 2px; /* 字符间距 */ }  文本参考  字体" />
+ 文本颜色
+body { color: red;/* 没有特别设置的该页面所有文本都会是红色 */ } p { color: #00f000; }  对齐、缩进
+```css h1 p{ text-alian: center; /* left, center, right, justfiy; */ text-indent: 2em; }
+ 装饰
+p.main{ text-decoration: none; /* overline, line-through, underline; */ text-transform: uppercase;/* uppercase, lowercase, capitalize; */ line-height: 100%; /* 行高 */ letter-spacing: 2px; /* 字符间距 */ }  文本参考" />
 
   <link
     rel="stylesheet"
@@ -115,31 +123,35 @@ body{ background-image: url(); background-color: red; background-repeat: repeat-
 <li><p>文本</p>
 
 <ol>
-<li>文本颜色
-<code>css
-body {
+<li><p>文本颜色</p>
+
+<pre><code class="language-css">body {
     color: red;/* 没有特别设置的该页面所有文本都会是红色 */
 }
 p {
     color: #00f000;
 }
-</code></li>
-<li>对齐、缩进
-```css
+</code></pre></li>
+
+<li><p>对齐、缩进</p>
+
+<p>```css
 h1 p{
     text-alian: center; /* left, center, right, justfiy; */
     text-indent: 2em;
-}</li>
-<li>装饰
-<code>css
-p.main{
+}</p></li>
+
+<li><p>装饰</p>
+
+<pre><code class="language-css">p.main{
     text-decoration: none; /* overline, line-through, underline; */
     text-transform: uppercase;/* uppercase, lowercase, capitalize; */
     line-height: 100%; /* 行高 */
     letter-spacing: 2px; /* 字符间距 */
 }
-</code>
-<a href="http://www.runoob.com/css/css-text.html">文本参考</a></li>
+</code></pre>
+
+<p><a href="http://www.runoob.com/css/css-text.html">文本参考</a></p></li>
 </ol></li>
 
 <li><p>字体</p>
@@ -168,6 +180,7 @@ font-weight: normal; /* lighter,bold, bolder, 100~900 */
     list-style: type position image;
     /* type: 类型 
     position: 前标的位置，默认 outside
+    */
 }
 </code></pre></li>
 
@@ -185,7 +198,21 @@ font-weight: normal; /* lighter,bold, bolder, 100~900 */
     /*margin, padding 可以简写：
     10px 20px; 上下10， 左右20；
     10px 20px 30px; 上10， 左右20， 下30；
-    10px 20px 30px 40px；一次对应上下左右;
+    10px 20px 30px 40px；一次对应上右下左;
+
+    1、如果top、right、bottom、left的值相同，如下面代码：
+    margin:10px 10px 10px 10px;
+    可缩写为：
+    margin:10px;
+    2、如果top和bottom值相同、left和 right的值相同，如下面代码：
+    margin:10px 20px 10px 20px;
+    可缩写为：
+    margin:10px 20px;
+    3、如果left和right的值相同，如下面代码：
+    margin:10px 20px 30px 20px;
+    可缩写为：
+    margin:10px 20px 30px;
+    注意：padding、border的缩写方法和margin是一致的。
     */
 }
 </code></pre></li>
