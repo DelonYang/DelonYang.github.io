@@ -82,7 +82,7 @@ addresses=db.relationship(&#39;Address&#39;, backref=&#39;user&#39;, lazy=True, 
       <pubDate>Fri, 18 Jan 2019 16:47:54 +0800</pubDate>
       
       <guid>http://delonyang.github.io/note/awesome/</guid>
-      <description> golang python  https://github.com/joke2k/faker Faker Data， 很好用   Utils </description>
+      <description> golang python  https://github.com/joke2k/faker Faker Data， 很好用   Utils  https://github.com/tonsky/FiraCode 一款 我中意的字体  </description>
     </item>
     
     <item>
