@@ -229,6 +229,30 @@
 </ol></li>
 </ol>
 
+<h3 id="工具">工具</h3>
+
+<h4 id="1-httpie">1. httpie</h4>
+
+<p><a href="https://github.com/jakubroztocil/httpie">github地址</a>
+相比curl，wget，这简直是神器</p>
+
+<p>用法： <code>http [flag] method url item</code></p>
+
+<p>method 为http方法，默认为 get 或 post，以参数为准</p>
+
+<p>传参：</p>
+
+<ul>
+<li>get 查询字符串： key==value</li>
+<li>post json/form key=value</li>
+<li>以原值传，int，bool等类型 key:=value</li>
+<li>设置header： name: value</li>
+<li>使用文件内容： key:=@value.json</li>
+<li>传文件: key@tt.png</li>
+<li>传json字符串： key:=&rsquo;[1,2,3]&rsquo;</li>
+<li>下载文件： http -d/&ndash;download <a href="http://XXX.tar.gz">http://XXX.tar.gz</a></li>
+</ul>
+
           </div>
           
           
